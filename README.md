@@ -1,4 +1,4 @@
-# 🛒 E-commerce Product API named BIGIDEASMART
+# 🛒 E-commerce Product API 
 
 A robust backend E-commerce API built with Django REST Framework (DRF) and JWT Authentication.
 This project powers an online marketplace that supports user authentication, category and product management, and advanced filtering/searching.  
@@ -21,7 +21,7 @@ Admins can add or update products, while users can view and search products by c
 -  **Pagination** for large product lists
 -  **Django ORM** for database management
 -  **CORS support** for frontend integration
--  **Ready for Deployment** on Render
+-  **Deployed with Render + PostgreSQL** on Render
 
 ---
 
@@ -40,8 +40,8 @@ Admins can add or update products, while users can view and search products by c
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/FutureDevGuy/BigIdeasMart.git
-cd BigIdeasMart/ecommerce-api
+git clone https://github.com/FutureDevGuy/ecommerce-api
+cd ecommerce-api
 
 2️⃣ Create and Activate a Virtual Environment
 python -m venv venv
