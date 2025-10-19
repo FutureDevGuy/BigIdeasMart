@@ -21,7 +21,7 @@ Admins can add or update products, while users can view and search products by c
 -  **Pagination** for large product lists
 -  **Django ORM** for database management
 -  **CORS support** for frontend integration
--  **Ready for Deployment** on Heroku or PythonAnywhere
+-  **Ready for Deployment** on Render
 
 ---
 
@@ -31,7 +31,7 @@ Admins can add or update products, while users can view and search products by c
 - **Authentication:** Simple JWT  
 - **Database:** SQLite (Development) / PostgreSQL (Production)  
 - **Filtering:** django-filter  
-- **Deployment:** Heroku / PythonAnywhere  
+- **Deployment:** Render
 - **Other Tools:** gunicorn, whitenoise, dj-database-url, python-dotenv  
 
 ---
@@ -45,7 +45,7 @@ cd BigIdeasMart/ecommerce-api
 
 2️⃣ Create and Activate a Virtual Environment
 python -m venv venv
-source venv/Scripts/activate  # On Windows
+source venv/Scripts/activate
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
@@ -99,6 +99,16 @@ curl http://127.0.0.1:8000/api/products/
 
 Search Products
 curl "http://127.0.0.1:8000/api/products/?search=HP Laptop"
+
+Live Deployment
+
+Base URL:
+👉 https://ecommerce-api-w2d8.onrender.com
+
+Example Endpoints:
+Products: https://ecommerce-api-w2d8.onrender.com/api/products/
+Categories: https://ecommerce-api-w2d8.onrender.com/api/categories/
+Authentication: https://ecommerce-api-w2d8.onrender.com/api/token/
   
 
 🧩 Project Structure

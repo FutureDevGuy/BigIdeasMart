@@ -8,9 +8,15 @@ https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
 """
 
 import os
-
+from django.core.management import call_command
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ecommerce_api.settings')
 
 application = get_wsgi_application()
+
+# Run migrations on startup (Render workaround)
+try:
+    call_command("run_migrations")
+except Exception as e:
+    print(f"Migration error: {e}")
