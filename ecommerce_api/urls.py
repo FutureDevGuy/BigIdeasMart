@@ -20,7 +20,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from django.http import JsonResponse
 
 def home(request):
-    return JsonResponse({"message":"Ecommerce API is running"})
+    return JsonResponse({"github repo":"https://github.com/FutureDevGuy/ecommerce-api"})
 
 urlpatterns = [
     path('', home),
